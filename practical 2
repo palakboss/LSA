@@ -1,22 +1,19 @@
-User add in a kali linux
-Command - adduser username
-setting network
-IP address
-Command - sudo ifconfig -a
-IP address and netmask network configuration
-Command:- sudo ifconfig eth0 192.168.1.0 netmask 255.255.255.0
-configure services in kali linux
-Command - service ssh start
-Command - ssh username@hostname
-command To Run, enable, start, stop 
-Command :- systemctl [command] [service_name]
-this is a stop and restart the service 
-Command - sudo systemctl restart SERVICE_NAME
-Command - sudo systemctl stop SERVICE_NAME
-this is a enable services boot
-Command - sudo systemctl enable SERVICE_NAME
-and display the list of services which are running In Kali Linux
-Command - sudo systemctl -t=service --state=running
-Sudo settings
-Command - sudo apt install -y software_name
-any Command Which Are Used With Sudo Give A User A Super User Advantage.
+1) Addng a user: A user the one who works on the machine or have the permissions to read, write and execute particular or all files.
+                  A user can be added individually or they can be added in a group too.
+  command to add a user individually is : $sudo adduser <username>
+      example: $sudo adduser lsa_user
+
+2) Network settings: The ip address and the ethernet connections and other network connections can be viewed using the :
+    comand: $sudo ip a   (or)  $sudo ip addr
+
+3) Configuring services: services are also known as daemons which efficiently run in the background, services usually have a 'd' in last 
+                          of their name to identify it as a daemon for example - smbd , nmbd,etc
+    services can be lookout in the /etc/ folder as mostly the services lie there for example: $sudo nano /etc/dhcp/dhcpd.conf 
+
+4) List of services running: command to list the currently active and running services:- $sudo systemctl
+
+5) Command to enable a service:                 $sudo systemctl enable <service_name>
+    Command to start a service:                  $sudo systemctl start <service_name>
+    Command to check the status of a service:    $sudo systemctl status <service_name>
+    Command to stop a service:                   $sudo systemctl stop <service_name>
+    Command to auto-start a service:             $sudo systemctl restart <service_name>
