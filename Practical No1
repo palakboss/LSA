@@ -1,1 +1,22 @@
+Installing DHCP in Ubuntu
 
+A.Install DHCP Server in Ubuntu 16.04
+Command - sudo apt-get install isc-dhcp-server
+
+B. Configuring the network card.
+Command - sudo nano /etc/default/isc-dhcp-server
+Set Interfaces=”eth0”
+
+C. Configuring DHCP To server open and modify file
+Command - sudo nano /etc/dhcp/dhcpd.conf
+ 
+D. Start and stop the isc-dchp-server service
+
+Start The service
+Command - sudo systemctl start isc-dhcp-server
+
+Stop the service
+Command - sudo systemctl stop isc-dhcp-server
+
+Restart the service
+Command - sudo systemctl restart isc-dhcp-server
