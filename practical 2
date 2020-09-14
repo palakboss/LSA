@@ -1,29 +1,22 @@
 User add in a kali linux
 Command - adduser username
-
 setting network
 IP address
 Command - sudo ifconfig -a
-
 IP address and netmask network configuration
 Command:- sudo ifconfig eth0 192.168.1.0 netmask 255.255.255.0
-
 configure services in kali linux
 Command - service ssh start
 Command - ssh username@hostname
-
 command To Run, enable, start, stop 
 Command :- systemctl [command] [service_name]
-
 this is a stop and restart the service 
 Command - sudo systemctl restart SERVICE_NAME
 Command - sudo systemctl stop SERVICE_NAME
-
 this is a enable services boot
 Command - sudo systemctl enable SERVICE_NAME
-
 and display the list of services which are running In Kali Linux
 Command - sudo systemctl -t=service --state=running
-
 Sudo settings
 Command - sudo apt install -y software_name
+any Command Which Are Used With Sudo Give A User A Super User Advantage.
