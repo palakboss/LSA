@@ -1,1 +1,25 @@
+Installing NFS Server 
 
+Step 1
+Command to first we have to do install nfs-kernel-server :- sudo apt-get -y install nfs-kernel-server
+
+Step 2 
+Command to Then create a new directory and file in this  :- mkdir  dir_name
+then open shell script and add a file in it , Command :- vi abc.txt
+
+Step 3  
+Command to  Open /etc/exports :- sudo vi /etc/exports
+
+Step 4  
+Command to and we have to add line at the end of file :- home/kali/dir_name 127.0.0.1(rw)
+
+Step 5  
+Command to use below commnand to will create a table and see records :- sudo export -ra
+
+Step 6  
+Command to install nfs-common is present or than we have to use this cammand , if not found :- sudo apt-get -y install nfs-common
+
+Step 7  
+Command to mount the file you want to transfer in other directory :- sudo mount -t nfs 127.0.0.1:[dir_name] [dir_name2]
+    
+    
