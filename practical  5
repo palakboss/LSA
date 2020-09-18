@@ -27,6 +27,12 @@ step 5 -   Start/Restart the service
            $  sudo service smbd restart
            $  sudo ufw allow samba
            Now we'll set up a samba password for the user
+           To check
+           sudo smbcllient -U <username> -L  //your ip
+           restart services
+           sudo systemctl restart smbd
+           sudo systemctl restart nmbd
+           or
            sudo smbpasswd -a username
            $ sudo smbpasswd -a kali
    
